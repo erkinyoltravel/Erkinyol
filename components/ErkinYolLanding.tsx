@@ -1,4 +1,3 @@
-
 import React, { useEffect, useMemo, useState } from "react";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
@@ -7,10 +6,16 @@ import { Plane, Hotel, TramFront, Mountain, Compass, Globe2, Phone, Mail, MapPin
 const fade = { hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.06 } } };
 
+// ✅ Правильная версия Section — НИКАКИХ дополнительных <section ...> ниже быть не должно
 type SectionProps = React.PropsWithChildren<{ id?: string; className?: string }>;
-const Section: React.FC<SectionProps> = ({ id, className = "", children }) => (
-  <section id={id} className={`container mx-auto px-4 lg:px-8 ${className}`}>{children}</section>
-);
+const Section: React.FC<SectionProps> = ({ id, className = "", children }) => {
+  return (
+    <section id={id} className={`container mx-auto px-4 lg:px-8 ${className}`}>
+      {children}
+    </section>
+  );
+};
+
 const Badge: React.FC<React.PropsWithChildren> = ({ children }) => (
   <span className="inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium tracking-wide backdrop-blur bg-white/60 dark:bg-slate-900/40 shadow-sm">{children}</span>
 );
