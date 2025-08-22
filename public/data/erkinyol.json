@@ -1,0 +1,97 @@
+{
+  "services": [
+    {
+      "key": "hotels",
+      "ru": {
+        "title": "Бронирование отелей",
+        "desc": "Подбираем проверенные отели под ваш маршрут и бюджет."
+      },
+      "en": {
+        "title": "Hotel booking",
+        "desc": "Trusted stays tailored to your route and budget."
+      },
+      "zh": {
+        "title": "酒店预订",
+        "desc": "根据行程与预算甄选可信住宿。"
+      }
+    },
+    {
+      "key": "air",
+      "ru": {
+        "title": "Авиабилеты (внутренние/междун.)",
+        "desc": "Оперативно оформляем билеты и оптимизируем стыковки."
+      },
+      "en": {
+        "title": "Flight tickets (domestic/international)",
+        "desc": "Fast issuing and smart connections."
+      },
+      "zh": {
+        "title": "机票（国内/国际）",
+        "desc": "快速出票，优化转机衔接。"
+      }
+    },
+    {
+      "key": "transfer",
+      "ru": {
+        "title": "Трансферы и транспорт",
+        "desc": "Авто, офф-роуд, поезд или комбинированно."
+      },
+      "en": {
+        "title": "Transfers & transport",
+        "desc": "Car, off-road, train or combined."
+      },
+      "zh": {
+        "title": "接送与交通",
+        "desc": "汽车、越野、火车或组合。"
+      }
+    }
+  ],
+  "tours": [
+    {
+      "slug": "derweze",
+      "days": 2,
+      "ru": {
+        "title": "Экспедиция к кратеру Дарваза",
+        "blurb": "Ночное свечение газового кратера и ужин под звёздами."
+      },
+      "en": {
+        "title": "Darvaza Crater Expedition",
+        "blurb": "Glowing gas crater and a starlit camp dinner."
+      },
+      "zh": {
+        "title": "达瓦札火焰地坑探秘",
+        "blurb": "夜观地坑火海与星空营地晚餐。"
+      },
+      "facts": [
+        {
+          "ru": "Возраст: 12–70",
+          "en": "Age: 12–70",
+          "zh": "年龄：12–70"
+        },
+        {
+          "ru": "Группа: до 70",
+          "en": "Group: up to 70",
+          "zh": "团队：最多 70 人"
+        }
+      ],
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1400&auto=format&fit=crop"
+    }
+  ],
+  "outbound": [
+    {
+      "ru": "Иран",
+      "en": "Iran",
+      "zh": "伊朗"
+    },
+    {
+      "ru": "Вьетнам",
+      "en": "Vietnam",
+      "zh": "越南"
+    },
+    {
+      "ru": "Китай",
+      "en": "China",
+      "zh": "中国"
+    }
+  ]
+}
