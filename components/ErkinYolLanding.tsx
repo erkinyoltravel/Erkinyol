@@ -7,7 +7,10 @@ import { Plane, Hotel, TramFront, Mountain, Compass, Globe2, Phone, Mail, MapPin
 const fade = { hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.06 } } };
 
-const Section: React.FC<{id?:string, className?:string}> = ({ id, className="", children }) => (
+type SectionProps = React.PropsWithChildren<{ id?: string; className?: string }>;
+const Section: React.FC<SectionProps> = ({ id, className = "", children }) => (
+  <section id={id} className={`container mx-auto px-4 lg:px-8 ${className}`}>{children}</section>
+);
   <section id={id} className={`container mx-auto px-4 lg:px-8 ${className}`}>{children}</section>
 );
 const Badge: React.FC<React.PropsWithChildren> = ({ children }) => (
