@@ -11,8 +11,6 @@ type SectionProps = React.PropsWithChildren<{ id?: string; className?: string }>
 const Section: React.FC<SectionProps> = ({ id, className = "", children }) => (
   <section id={id} className={`container mx-auto px-4 lg:px-8 ${className}`}>{children}</section>
 );
-  <section id={id} className={`container mx-auto px-4 lg:px-8 ${className}`}>{children}</section>
-);
 const Badge: React.FC<React.PropsWithChildren> = ({ children }) => (
   <span className="inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium tracking-wide backdrop-blur bg-white/60 dark:bg-slate-900/40 shadow-sm">{children}</span>
 );
